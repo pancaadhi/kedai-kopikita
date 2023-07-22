@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kopikita</title>
+    <title>Kedai Kopikita</title>
 
     <!-- fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -33,14 +33,53 @@
             <a href="#">Home</a>
             <a href="#about">Tentang Kami</a>
             <a href="#menu">Menu</a>
+            <a href="#products">Produk</a>
             <a href="#contact">Kontak</a>
         </div>
 
         <div class="navbar-extra">
-            <a href="#" id="search"><i data-feather="search"></i></a>
-            <a href="#" id="shopping-cart"><i data-feather="shopping-cart"></i></a>
+            <a href="#" id="search-button"><i data-feather="search"></i></a>
+            <a href="#" id="shopping-cart-button"><i data-feather="shopping-cart"></i></a>
             <a href="#" id="humberger-menu"><i data-feather="menu"></i></a>
         </div>
+
+        <!-- search form start -->
+        <div class="search-form">
+            <input type="search" id="search-box" placeholder="search here . . .">
+            <label for="search-box"><i data-feather="search"></i></label>
+        </div>
+        <!-- search form end -->
+
+        <!-- Shopping cart start -->
+        <div class="shopping-cart">
+
+            <div class="cart-item">
+                <img src="img/products/1.jpg" alt="produk 1">
+                <div class="item-detail">
+                    <h3>Little Snap Coffee Beans</h3>
+                    <div class="item-price">55K</div>
+                </div>
+                <i data-feather="trash-2" class="remove-item"></i>
+            </div>
+            <div class="cart-item">
+                <img src="img/products/2.jpg" alt="produk 2">
+                <div class="item-detail">
+                    <h3>Brixco Coffee Beans</h3>
+                    <div class="item-price">55K</div>
+                </div>
+                <i data-feather="trash-2" class="remove-item"></i>
+            </div>
+            <div class="cart-item">
+                <img src="img/products/4.jpg" alt="produk 3">
+                <div class="item-detail">
+                    <h3>Yellow Catuai Coffee Beans</h3>
+                    <div class="item-price">55K</div>
+                </div>
+                <i data-feather="trash-2" class="remove-item"></i>
+            </div>
+
+        </div>
+        <!-- Shopping cart end -->
 
     </nav>
     <!-- Navbar end -->
@@ -116,6 +155,84 @@
     </section>
     <!-- menu section end-->
 
+    <!-- products section start -->
+    <section id="products" class="products">
+        <h2><span>Produk Unggulan</span> Kami</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo harum maxime, soluta error ipsum
+            necessitatibus.</p>
+
+        <div class="row">
+
+            <div class="product-card">
+                <div class="product-icons">
+                    <a href="#"><i data-feather="shopping-cart"></i></a>
+                    <a href="#" class="item-detail-button"><i data-feather="eye"></i></a>
+                </div>
+                <div class="product-image">
+                    <img src="img/products/1.jpg" alt="Produk 1">
+                </div>
+                <div class="product-content">
+                    <h3>Little Snap Coffee Beans</h3>
+                    <div class="product-stars">
+                        <i data-feather="star" class="star-full"></i>
+                        <i data-feather="star" class="star-full"></i>
+                        <i data-feather="star" class="star-full"></i>
+                        <i data-feather="star" class="star-full"></i>
+                        <i data-feather="star"></i>
+                        <p>4.0 (643 rating)</p>
+                    </div>
+                </div>
+                <div class="product-price">IDR 55K <span>IDR 80K</span></div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-icons">
+                    <a href="#"><i data-feather="shopping-cart"></i></a>
+                    <a href="#" class="item-detail-button"><i data-feather="eye"></i></a>
+                </div>
+                <div class="product-image">
+                    <img src="img/products/2.jpg" alt="Produk 2">
+                </div>
+                <div class="product-content">
+                    <h3>Brixco Coffee Beans</h3>
+                    <div class="product-stars">
+                        <i data-feather="star" class="star-full"></i>
+                        <i data-feather="star" class="star-full"></i>
+                        <i data-feather="star" class="star-full"></i>
+                        <i data-feather="star" class="star-full"></i>
+                        <i data-feather="star" class="star-full"></i>
+                        <p>4.9 (2,143 rating)</p>
+                    </div>
+                </div>
+                <div class="product-price">IDR 85K <span>IDR 120K</span></div>
+            </div>
+            <div class="product-card">
+                <div class="product-icons">
+                    <a href="#"><i data-feather="shopping-cart"></i></a>
+                    <a href="#" class="item-detail-button"><i data-feather="eye"></i></a>
+                </div>
+                <div class="product-image">
+                    <img src="img/products/4.jpg" alt="Produk 3">
+                </div>
+                <div class="product-content">
+                    <h3>Yellow Catuai Coffee Beans</h3>
+                    <div class="product-stars">
+                        <i data-feather="star" class="star-full"></i>
+                        <i data-feather="star" class="star-full"></i>
+                        <i data-feather="star" class="star-full"></i>
+                        <i data-feather="star" class="star-full"></i>
+                        <i data-feather="star" class="star-full"></i>
+                        <p>5.0 (1,504 rating)</p>
+                    </div>
+                </div>
+                <div class="product-price">IDR 105K <span>IDR 135K</span></div>
+            </div>
+
+        </div>
+
+    </section>
+    <!-- products section end -->
+
     <!-- Contact Section start -->
     <section id="contact" class="contact">
         <h2><span>Kontak</span> Kami</h2>
@@ -167,6 +284,32 @@
         </div>
     </footer>
     <!-- footer end -->
+
+    <!-- modal box item detail start -->
+    <div class="modal" id="item-detail-modal">
+        <div class="modal-container">
+            <a href="#" class="close-icon"><i data-feather="x"></i></a>
+            <div class="modal-content">
+                <img src="img/products/1.jpg" alt="produk 1">
+                <div class="product-content">
+                    <h3>Brixco Coffee Beans</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam voluptatem eligendi, suscipit
+                        iure sunt dolorum quidem recusandae a illo atque. Voluptatibus possimus vel deserunt facere.</p>
+                    <div class="product-stars">
+                        <i data-feather="star" class="star-full"></i>
+                        <i data-feather="star" class="star-full"></i>
+                        <i data-feather="star" class="star-full"></i>
+                        <i data-feather="star" class="star-full"></i>
+                        <i data-feather="star" class=""></i>
+                        <p>4.0 (643 rating)</p>
+                    </div>
+                    <div class="product-price">IDR 85K <span>IDR 120K</span></div>
+                    <a href="#"><i data-feather="shopping-cart"></i> <span>Add to cart</span></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- modal box item detail end -->
 
     <!-- Feather Icons -->
     <script>
